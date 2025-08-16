@@ -22,6 +22,7 @@ class MainActivity : ComponentActivity() {
 
         val btnMain = findViewById<Button>(R.id.button)
         val btnWebView = findViewById<Button>(R.id.webView)
+        val btnShop = findViewById<Button>(R.id.shop)
 
         btnMain.setOnClickListener{
             val myIntent = Intent(this, SecondActivity::class.java)
@@ -31,6 +32,11 @@ class MainActivity : ComponentActivity() {
         btnWebView.setOnClickListener {
             val webViewIntent = Intent(this, WebViewActivity::class.java)
             startActivity(webViewIntent)
+        }
+
+        btnShop.setOnClickListener {
+            val shopIntent = Intent(this, ShopActivity::class.java)
+            startActivity(shopIntent)
         }
     }
 }
