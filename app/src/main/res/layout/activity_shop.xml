@@ -21,7 +21,7 @@
         android:text="SHOP" />
 
     <EditText
-        android:id="@+id/etOrder"
+        android:id="@+id/eT1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -31,7 +31,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/et2"
+        android:id="@+id/eT2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -41,7 +41,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/et3"
+        android:id="@+id/eT3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -51,7 +51,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/et4"
+        android:id="@+id/eT4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
