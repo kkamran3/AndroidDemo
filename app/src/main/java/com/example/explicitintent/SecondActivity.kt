@@ -1,6 +1,7 @@
 package com.example.explicitintent
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 
 import androidx.activity.ComponentActivity
@@ -25,7 +26,9 @@ class SecondActivity : ComponentActivity() {
         val cameraButton = findViewById<CardView>(R.id.cardCamera)
 
         webButton.setOnClickListener {
-
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://blockchainlearners.com")
+            startActivity(intent)
         }
 
         cameraButton.setOnClickListener {
