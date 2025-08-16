@@ -21,10 +21,16 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         val btnMain = findViewById<Button>(R.id.button)
+        val btnWebView = findViewById<Button>(R.id.webView)
 
         btnMain.setOnClickListener{
             val myIntent = Intent(this, SecondActivity::class.java)
             startActivity(myIntent)
+        }
+
+        btnWebView.setOnClickListener {
+            val webViewIntent = Intent(this, WebViewActivity::class.java)
+            startActivity(webViewIntent)
         }
     }
 }
