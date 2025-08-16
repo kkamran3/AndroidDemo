@@ -2,10 +2,11 @@ package com.example.explicitintent
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.cardview.widget.CardView
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -20,5 +21,15 @@ class SecondActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
+        val webButton = findViewById<CardView>(R.id.cardWeb)
+        val cameraButton = findViewById<CardView>(R.id.cardCamera)
+
+        webButton.setOnClickListener {
+
+        }
+
+        cameraButton.setOnClickListener {
+
+        }
     }
 }

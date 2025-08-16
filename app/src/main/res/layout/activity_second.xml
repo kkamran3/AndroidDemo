@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/purple_500"
-        android:text="2nd Button" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWeb"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        >
+
+        <TextView
+            android:id="@+id/textWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Open webpage" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCamera"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        >
+
+        <TextView
+            android:id="@+id/textCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Open Camera" />
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
